@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecommendViewController" customModule="IMDUMB" customModuleProvider="target">
+            <connections>
+                <outlet property="commentTextView" destination="VFR-8m-Bb9" id="KVJ-EL-ugf"/>
+                <outlet property="movieDescriptionLabel" destination="P91-ne-cgL" id="9dE-XZ-JBE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XSg-2e-kRk">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p3c-JV-XTY">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2a0-Sy-pxD">
+                                    <rect key="frame" x="0.0" y="8" width="393" height="751"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P91-ne-cgL">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="250.33333333333334"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Ingresa tu comentario..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VFR-8m-Bb9">
+                                            <rect key="frame" x="0.0" y="250.33333333333331" width="393" height="250.33333333333331"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <color key="textColor" systemColor="labelColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1q-bl-gHu">
+                                            <rect key="frame" x="0.0" y="500.66666666666657" width="393" height="250.33333333333331"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" title="Comentar"/>
+                                            <connections>
+                                                <action selector="confirmTapped:" destination="-1" eventType="touchUpInside" id="ctM-cB-CXD"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="2a0-Sy-pxD" secondAttribute="trailing" id="10Y-sU-2a7"/>
+                                <constraint firstAttribute="bottom" secondItem="2a0-Sy-pxD" secondAttribute="bottom" id="CfW-GR-hFs"/>
+                                <constraint firstItem="2a0-Sy-pxD" firstAttribute="leading" secondItem="p3c-JV-XTY" secondAttribute="leading" id="SSP-X5-6Al"/>
+                                <constraint firstItem="2a0-Sy-pxD" firstAttribute="top" secondItem="p3c-JV-XTY" secondAttribute="top" constant="8" id="qoT-TF-W6G"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="p3c-JV-XTY" firstAttribute="trailing" secondItem="320-4O-xmX" secondAttribute="trailing" id="Em7-Ii-xbw"/>
+                        <constraint firstItem="p3c-JV-XTY" firstAttribute="trailing" secondItem="TwL-QI-NFo" secondAttribute="trailing" constant="393" id="MqM-TB-5Sa"/>
+                        <constraint firstItem="p3c-JV-XTY" firstAttribute="leading" secondItem="TwL-QI-NFo" secondAttribute="leading" id="UwV-mu-e3y"/>
+                        <constraint firstItem="p3c-JV-XTY" firstAttribute="bottom" secondItem="320-4O-xmX" secondAttribute="bottom" id="WGq-VK-58R"/>
+                        <constraint firstItem="p3c-JV-XTY" firstAttribute="bottom" secondItem="TwL-QI-NFo" secondAttribute="bottom" constant="759" id="cZF-Te-gqj"/>
+                        <constraint firstItem="p3c-JV-XTY" firstAttribute="top" secondItem="320-4O-xmX" secondAttribute="top" id="ehA-DC-1nO"/>
+                        <constraint firstItem="p3c-JV-XTY" firstAttribute="top" secondItem="TwL-QI-NFo" secondAttribute="top" id="qtk-vu-3LS"/>
+                        <constraint firstItem="p3c-JV-XTY" firstAttribute="leading" secondItem="XSg-2e-kRk" secondAttribute="leading" id="v9k-Rq-4oc"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="TwL-QI-NFo"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="320-4O-xmX"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="XSg-2e-kRk" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="1TE-88-PN4"/>
+                <constraint firstItem="XSg-2e-kRk" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Ln0-rV-cAL"/>
+                <constraint firstItem="XSg-2e-kRk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Pbk-vz-9aJ"/>
+                <constraint firstItem="XSg-2e-kRk" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="dGX-Di-tfz"/>
+            </constraints>
+            <point key="canvasLocation" x="-59" y="-12"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

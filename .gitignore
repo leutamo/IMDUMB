@@ -1,0 +1,35 @@
+# --- Xcode ---
+# Construcción y datos temporales
+build/
+DerivedData/
+*.moved-aside
+*.xcuserstate
+
+# Configuración de usuario (¡Importante no subir esto!)
+xcuserdata/
+
+# --- Swift Package Manager ---
+.build/
+.swiftpm/
+
+# --- CocoaPods ---
+# Solo subimos el Podfile y Podfile.lock. 
+# La carpeta Pods se ignora para no pesar demasiado el repo.
+Pods/
+
+# --- Carthage ---
+Carthage/Build/
+
+# --- macOS ---
+.DS_Store
+*.swp
+*.lock
+
+# --- Fastlane ---
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# --- Archivos de registro ---
+*.log
