@@ -24,7 +24,7 @@ El proyecto fue desarrollado y testeado en un entorno **Mac Mini M2**.
 
 1. **Clonar el repositorio**:
    ```bash
-   git clone https://github.com/tu_usuario/IMDUMB.git
+   git clone https://github.com/leutamo/IMDUMB.git
    ```
 2. **Abrir el proyecto**:
    Localiza y abre el archivo `IMDUMB.xcodeproj`.
